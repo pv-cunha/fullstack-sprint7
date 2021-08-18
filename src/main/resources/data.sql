@@ -52,3 +52,6 @@ insert ignore into payment (id, value, card_client_name, card_number, card_expir
    (2, 3000.0, 'CAROLINE SOUZA', '1234 1234 1234 1234', '2023-06', '234', 'CREATED'),
    (3, 200.0, 'MARIA SILVA', '1111 1111 1111 1111', '2024-05', '456', 'CONFIRMED'),
    (4, 400.0, 'JOÃO QUEIROZ', '2222 3333 2222 4444', '2025-04', '567', 'CANCELED');
+
+insert ignore into user (id, username, email, password, profile) values (1, 'admin', 'admin@gmail.com', '$2a$10$sFKmbxbG4ryhwPNx/l3pgOJSt.fW1z6YcUnuE2X8APA/Z3NI/oSpq', "ADMIN");
+insert ignore into user (id, username, email, password, profile) values (2, 'paulo', 'paulo@gmail.com', '$2a$10$sFKmbxbG4ryhwPNx/l3pgOJSt.fW1z6YcUnuE2X8APA/Z3NI/oSpq', "PAULO");

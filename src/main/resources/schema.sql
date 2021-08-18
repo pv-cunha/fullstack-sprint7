@@ -3,6 +3,7 @@ drop table if exists product_image;
 drop table if exists product_available_sizes;
 drop table if exists product;
 drop table if exists category;
+drop table if exists user;
 
 create table category (
     id bigint(20) not null auto_increment,
@@ -61,5 +62,15 @@ create table payment (
     card_number varchar(50) not null,
     card_expiration varchar(10) not null,
     card_verification_code varchar(3) not null,
+    primary key (id)
+) engine=InnoDB default charset=latin1;
+
+create table user (
+    id bigint(20) not null auto_increment,
+    username varchar(100) not null,
+    email varchar(200) not null,
+    password varchar(500) not null,
+    profile varchar(20) not null,
+    unique key (email),
     primary key (id)
 ) engine=InnoDB default charset=latin1;

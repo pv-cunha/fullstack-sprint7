@@ -10,4 +10,14 @@ public class Card {
     private String expiration;
     private String verificationCode;
 
+    protected Card() {
+    }
+
+    public Card(String clientName, String number, String expiration, String verificationCode) {
+        this.clientName = clientName;
+        this.number = number;
+        this.expiration = expiration;
+        this.verificationCode = verificationCode;
+    }
+
 }

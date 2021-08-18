@@ -13,4 +13,7 @@ public class ProductImage {
 
     private String imageUrl;
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
 }
